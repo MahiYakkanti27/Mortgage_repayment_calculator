@@ -1,0 +1,261 @@
+body{
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.main{
+    margin: 3em auto 3em auto;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    max-width: 60%;
+    border-radius: 15px;
+    
+}
+.inputs{
+    padding: 1rem;
+    width: 100%;
+    color: hsl(200, 24%, 40%)
+}
+.results{
+    width: 100%;
+    background-color: hsl(200, 40%, 22%);
+    border-radius: 0 15px 15px 15%;
+}
+#Amount{
+    width:88%;
+    height: 2em;
+    outline-color: hsl(61, 70%, 52%);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav h3{
+    margin-top: 0;
+    color: hsl(202, 55%, 16%);
+}
+.nav1{
+    margin-top: 0.3em;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    gap: 1em;
+}
+.text1,.text2{
+    width: 100%;
+}
+#Term,#Rate{
+    height: 2em;
+    outline-color: hsl(61, 70%, 52%);
+}
+input{
+    margin-top: 0.5em;
+}
+input[type="text"]{
+    border-radius: 0.3em;
+}
+.radio12,.radio11{
+    height: 2em;
+    border: 1px solid rgb(7, 6, 6);
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    align-items: center;
+    width: 97%;
+}
+button{
+    border: none;
+    background: none;
+}
+.btn{
+    margin: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2.5em;
+    height: 2em;
+    width: fit-content;
+    background-color: hsl(61, 70%, 52%);
+}
+.btn img{
+    margin-left: 0.5rem;
+}
+.results1 p{
+    margin: 1em;
+    text-align: center;
+    font-size: 14px;
+    color: hsl(200, 26%, 54%);
+}
+.results1 h3{
+    padding-left: 23%;
+    color:hsl(0, 0%, 100%)
+}
+.results1 img{
+    padding-top: 20%;
+    padding-left: 30%;
+ width: 40%;
+ height: auto;
+}
+.symb{
+    display: flex
+}
+.parent{
+    position: relative;
+    width: 100%;
+}
+.inner{
+    position: absolute;
+    top: 1.719em;
+    left: 0.1em;
+    background-color: hsl(202, 86%, 94%);
+    height: 1.8em;
+    text-align: center;
+    color: hsl(202, 55%, 16%);
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    border-radius: 0.1em;
+}
+.parent1{
+    position: relative;
+    width: fit-content;
+}
+.inner1{
+    position: absolute;
+    top: 47.5%;
+    right: -0.8%;
+    background-color: hsl(202, 86%, 94%);
+    height: 1.8em;
+    text-align: center;
+    color: hsl(202, 55%, 16%);
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    border-radius: 0.1em;
+}
+.inner1 p{
+    margin-top: 0.3rem;
+}
+.inner p{
+    margin-top: 0.3em;
+}
+.radio11,.radio12{
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+}
+.radio11 :hover,.radio12 :hover, .btn :hover{
+    cursor: pointer;
+}
+#Amount{
+    padding-left: 12%;
+}
+#Term,#Rate{
+    padding-left: 4%;
+    width: 95%;
+}
+.nav1 a{
+    color: hsl(200, 24%, 40%);
+}
+.hidden1{
+    display: none;
+}
+.results2{
+    margin: 0 1em 1em 1em;
+}
+.results2 p{
+    font-size: 14px;
+}
+.inner_result{
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0.5em;
+    border-top: 0.25em solid hsl(61, 70%, 52%);
+    border-color: hsl(61, 70%, 52%);
+}
+.output {
+    margin: 1em;
+    padding-top: 1em;
+}
+hr{
+    color:hsl(200, 24%, 40%);
+    margin-bottom: 1.5em;
+}
+.results2{
+    color: hsl(200, 26%, 54%);
+}
+.results2 h3{
+    color: hsl(0, 0%, 100%);
+}
+.results h1{
+    color: hsl(61, 70%, 52%);
+}
+.parent:focus-within .inner {
+    background-color: hsl(61, 70%, 52%);
+}
+
+.parent1:focus-within .inner1 {
+    background-color: hsl(61, 70%, 52%);
+}
+input[type="radio"] {
+    accent-color: hsl(61, 70%, 52%);
+  }
+.empty{
+     background-color: hsl(4, 69%, 50%);
+     color: white;
+  }
+.empty1{
+    border-color: hsl(4, 69%, 50%);
+
+}
+#error1,#error2,#error3,#error4{
+    display: none;
+    font-size: 14px;
+    color: hsl(4, 69%, 50%);
+}
+input[type="radio"]:checked + .radio12 {
+    background-color: rgb(240, 248, 125);
+  }
+  @media screen and (max-width: 400px){
+    .main{
+        margin: 0;
+       flex-direction: column;
+       max-width: 100%;
+
+    }
+    .parent1,.parent{
+        width: 95%;
+    }
+    .inner1{
+        right: -2%;
+        top:48%
+    }
+    .inner{
+        top: 1.74em;
+        overflow: hidden;
+    }
+#Rate,#Term{
+    width: 97%;
+}
+#Amount{
+    width: 87%;
+}
+.radio11,.radio12{
+    width: 93%;
+}
+    .results{
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 950px){
+.text{
+    flex-wrap: wrap;
+}
+}
+.parent1{
+    width: 95%;
+}
+.bg{
+    background-color: rgb(217, 236, 121);
+}
