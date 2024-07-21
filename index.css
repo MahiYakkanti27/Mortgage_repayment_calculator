@@ -235,6 +235,12 @@ input[type="radio"]:checked + .radio12 {
         top: 1.74em;
         overflow: hidden;
     }
+    .header{
+        margin-right: 10%;
+    }
+    #Amount{
+        padding-left: 15%;
+    }
 #Rate,#Term{
     width: 97%;
 }
